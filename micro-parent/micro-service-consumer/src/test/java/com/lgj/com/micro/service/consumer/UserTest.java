@@ -22,7 +22,7 @@ public class UserTest {
 
     @Test
     public void test() {
-        userService.test();
+        userService.sayHello();
     }
 
 }

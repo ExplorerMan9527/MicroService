@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.lgj.com</groupId>
-	<artifactId>micro-service-producer</artifactId>
+	<artifactId>micro-service-producer-follower</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 

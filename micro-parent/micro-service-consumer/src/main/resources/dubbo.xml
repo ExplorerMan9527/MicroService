@@ -9,7 +9,11 @@
 
     <!-- 提供方应用信息，用于计算依赖关系 -->
     <dubbo:application name="dubbo-consumer" />
-    <dubbo:registry  protocol="zookeeper"  address="zookeeper://127.0.0.1:2181" />
-    <dubbo:reference interface="com.lgj.api.UserService" id="userService" url="dubbo://127.0.0.1:20880" timeout="1200000" />
+    <!--全局配置 启动时检查-->
+    <dubbo:consumer check="false" />
+    <!--注册中心，注册本服务-->
+    <dubbo:registry protocol="zookeeper"  address="zookeeper://127.0.0.1:2181" check="false"/>
+    <!--引用服务-->
+    <dubbo:reference interface="com.lgj.api.UserService"  id="userService" />
 
 </beans>

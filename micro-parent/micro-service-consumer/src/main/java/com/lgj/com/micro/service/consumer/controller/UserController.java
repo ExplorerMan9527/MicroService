@@ -22,7 +22,6 @@ public class UserController {
 
     @RequestMapping(value = "/test" ,method = RequestMethod.GET)
     public String  test(){
-        userService.test();
-        return "dubbo";
+        return userService.sayHello();
     }
 }

@@ -17,5 +17,5 @@ public interface UserService {
      * 邮箱 15600672381@163.com
      * Q  Q 211192390
      */  
-    void sayHello(String name);
+    String sayHello(String name);
 }

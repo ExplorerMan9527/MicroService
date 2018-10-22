@@ -8,14 +8,14 @@ import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
 @ImportResource("classpath:dubbo.xml")
-public class MicroServiceProducerApplication  extends SpringBootServletInitializer {
+public class MicroServiceProducerFollowerApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroServiceProducerApplication.class, args);
+		SpringApplication.run(MicroServiceProducerFollowerApplication.class, args);
 
 	}
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(MicroServiceProducerApplication.class);
+        return application.sources(MicroServiceProducerFollowerApplication.class);
     }
 }

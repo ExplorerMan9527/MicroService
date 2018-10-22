@@ -13,6 +13,8 @@
        <module>/micro-service-consumer</module>
        <module>/micro-service-producer</module>
       <module>/micro-interfaces</module>
+      <module>/micro-service-producer-follower</module>
+
   </modules>
   <name>micro-parent</name>
 

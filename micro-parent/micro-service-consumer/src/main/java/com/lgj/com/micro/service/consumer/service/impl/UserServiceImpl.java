@@ -1,8 +1,8 @@
 package com.lgj.com.micro.service.consumer.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.alibaba.dubbo.config.annotation.Service;
 import com.lgj.api.UserService;
+import com.lgj.com.micro.service.consumer.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -14,12 +14,13 @@ import org.springframework.stereotype.Component;
  * @date 2018/10/179:54
  */
 @Component
-public class UserServiceImpl {
+public class UserServiceImpl implements OrderService {
+
     @Reference
     private UserService userService;
 
-    public void test(){
-        userService.sayHello("dubbo");
+    @Override
+    public String sayHello() {
+        return userService.sayHello("dubbo");
     }
-
 }

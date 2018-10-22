@@ -15,8 +15,8 @@ import org.springframework.stereotype.Component;
 public class UserServiceImpl implements UserService {
 
     @Override
-    public String  sayHello(String name) {
-        return "Hello "+name + " master";
+    public String sayHello(String name) {
+        return "Hello "+name + " follower";
 
     }
 }

@@ -16,7 +16,7 @@ public class MicroServiceConsumerApplicationTests {
 
     @Test
 	public void contextLoads() {
-        userService.test();
+        userService.sayHello();
 	}
 
 }
