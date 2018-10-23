@@ -7,7 +7,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
-@ImportResource("classpath:dubbo.xml")
+@ImportResource("classpath:producer-follower.xml")
 public class MicroServiceProducerFollowerApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {

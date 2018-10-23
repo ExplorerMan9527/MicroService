@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ImportResource;
 
 
 @SpringBootApplication
-@ImportResource("classpath:dubbo.xml")
+@ImportResource("classpath:consumer.xml")
 public class MicroServiceConsumerApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
